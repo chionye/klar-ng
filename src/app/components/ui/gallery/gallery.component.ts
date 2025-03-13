@@ -39,7 +39,7 @@ export class GalleryComponent {
         items: 2, // Show 3 items with center effect
       },
     },
-    nav: true,
+    nav: false,
   };
 
   getPassedData(data: SlidesOutputData) {

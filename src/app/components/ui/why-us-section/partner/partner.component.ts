@@ -35,6 +35,6 @@ export class PartnerComponent {
         items: 4,
       },
     },
-    nav: true,
+    nav: false,
   };
 }

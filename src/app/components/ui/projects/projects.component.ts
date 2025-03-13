@@ -29,7 +29,7 @@ export class ProjectsComponent {
     autoplay: true,
     navSpeed: 700,
     items: 1,
-    nav: true,
+    nav: false,
   };
 
   getPassedData(data: SlidesOutputData) {
