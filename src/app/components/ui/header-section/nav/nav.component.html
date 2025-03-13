@@ -1,0 +1,63 @@
+<div>
+  <div class="lg:flex hidden items-center justify-center gap-6 w-full">
+    <div *ngFor="let nav of navs" class="group flex items-center gap-2 px-6">
+      <div>
+        <a
+          href="javascript:void(0)"
+          (click)="scrollToSection(nav.link)"
+          class="text-[15px] font-semibold poppins leading-tight cursor-pointer text-[#0E204D] group-hover:text-[#0090BC] active:text-[#0090BC]"
+        >
+          {{ nav.label }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="lg:hidden flex">
+    <button
+      class="flex flex-col gap-2 w-[20px] h-[20px] relative z-50"
+      (click)="toggleMenu()"
+      aria-label="Toggle Menu"
+    >
+      <!-- Top Line -->
+      <div
+        class="w-[20px] h-[2px] bg-black rounded transition-all duration-300"
+        [ngClass]="{ 'rotate-45 translate-y-[10px]': isOpen }"
+      ></div>
+
+      <!-- Middle Line -->
+      <div
+        class="w-[20px] h-[2px] bg-black rounded transition-all duration-300"
+        [ngClass]="{ 'opacity-0': isOpen }"
+      ></div>
+
+      <!-- Bottom Line -->
+      <div
+        class="w-[20px] h-[2px] bg-black rounded transition-all duration-300"
+        [ngClass]="{ '-rotate-45 -translate-y-[10px]': isOpen }"
+      ></div>
+    </button>
+
+    <div
+      *ngIf="isOpen"
+      @menuAnimation
+      class="fixed left-0 shadow-4xl right-0 top-[4.4rem] p-5 pt-0 bg-white border-b z-20 border-b-white/20 transform-all"
+    >
+      <div class="grid gap-2">
+        <div
+          *ngFor="let nav of navs"
+          class="nav-item flex items-center lg:py-0 py-3 gap-2 px-6 lg:border-0 lg:border-r border-b border-[#0000000F] transform-all"
+        >
+          <div>
+            <a
+              href="javascrip:void(0)"
+              (click)="scrollToSection(nav.link)"
+              class="text-[16px] font-semibold text-[#0E204D] poppins leading-tight transform-all"
+            >
+              {{ nav.label }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

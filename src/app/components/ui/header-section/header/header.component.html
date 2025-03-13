@@ -1,0 +1,17 @@
+<div class="w-full z-50 transition-all duration-300" id="home">
+  <app-contact-bar></app-contact-bar>
+  <div
+    class="flex items-center lg:justify-normal justify-between lg:px-0 px-5 py-2"
+    [ngClass]="{
+      'fixed top-0 z-50 left-0 w-full shadow-lg bg-white': isScrolled,
+      relative: !isScrolled
+    }"
+  >
+    <div class="lg:w-1/3 flex justify-center">
+      <a routerLink="/">
+        <img ngSrc="{{ logo }}" alt="" width="75.16" height="55.7" priority />
+      </a>
+    </div>
+    <app-nav></app-nav>
+  </div>
+</div>

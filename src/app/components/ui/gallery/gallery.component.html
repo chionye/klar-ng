@@ -1,0 +1,31 @@
+<div class="slider-container py-10 my-10 embla" id="gallery">
+  <owl-carousel-o
+    [options]="customOptions"
+    (translated)="getPassedData($event)"
+    #owlCar
+  >
+    <ng-container
+      class="embla__slide transition-transform duration-500 flex items-center justify-center px-2"
+      *ngFor="let image of images; let i = index"
+    >
+      <ng-template
+        carouselSlide
+        class="transition-transform duration-500 flex items-center justify-center px-2"
+      >
+        <div class="w-full h-full flex justify-center items-center rounded-3xl">
+          <div
+            class="shadow-lg overflow-hidden w-[80%] h-[600px] rounded-3xl flex items-center justify-center"
+            [ngStyle]="{
+              'background-image': 'url(' + image + ')',
+              'background-position': 'center',
+              width: activeSlides?.startPosition == i ? '100%' : '60%',
+              transform: activeSlides?.startPosition  === i ? 'scale(1)' : 'scale(0.8)',
+              transition: 'transform 0.5s ease, opacity 0.5s ease',
+              opacity: activeSlides?.startPosition  === i ? 1 : 0.6,
+            }"
+          ></div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>

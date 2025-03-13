@@ -1,0 +1,23 @@
+<div
+  class="flex lg:flex-row flex-col flex-wrap items-start justify-center lg:gap-10 gap-5 relative mt-8 lg:px-0 px-3"
+>
+  <div
+    *ngFor="let service of services"
+    class="bg-[#FAFAFA] rounded-lg lg:p-10 px-5 py-10 lg:w-[48%] relative"
+  >
+    <img ngSrc="icons/rocket_circle.svg" width="56" height="56" alt="" />
+    <p class="uppercase lato text-2xl text-[#13C5DD] font-bold mt-10">
+      {{ service.title }}
+    </p>
+    <p class="text-xl lato text-[#979797] font-normal mt-3">
+      {{ service.content }}
+    </p>
+  </div>
+  <div
+    class="h-[709px] lg:w-[48%] w-full lg:mt-0 mt-5 rounded-lg relative bottom-7"
+    [ngStyle]="{
+            'background-image': 'url(\'images/services-bg.jpeg\')',
+            'background-position-x': 'center',
+          }"
+  ></div>
+</div>

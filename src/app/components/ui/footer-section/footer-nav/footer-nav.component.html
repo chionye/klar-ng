@@ -1,0 +1,11 @@
+<div>
+  <a
+    *ngFor="let nav of navs; let i = index"
+    href="javascrip:void(0)"
+    (click)="scrollToSection(nav.link)"
+    class="text-white cursor-pointer poppins text-[14px] font-normal leading-[26px] poppins px-5"
+    [ngClass]="{ navBorders: i == 1 }"
+  >
+    {{ nav.label }}
+  </a>
+</div>

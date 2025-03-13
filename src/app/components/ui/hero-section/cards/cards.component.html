@@ -1,0 +1,16 @@
+<div
+  class="flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5 relative bottom-10 lg:px-20 px-5"
+>
+  <div
+    *ngFor="let card of cards"
+    [ngClass]="{ customBgColor: card.selected }"
+    class="lg:w-1/2 h-[133px] w-full p-[30px] border-b-4 bg-white border-[#13C5DD] rounded-t-lg flex items-end"
+  >
+    <div>
+      <p [ngClass]="{ customTitleTextColor: card.selected }" class="text-[16px] lato-regular capitalize text-[#848E9F]">{{ card.title }}</p>
+      <div class="w-3/4">
+        <p [ngClass]="{ customTextColor: card.selected }" class="text-[#0E204D] capitalize">{{ card.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>

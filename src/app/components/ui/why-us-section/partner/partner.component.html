@@ -1,0 +1,21 @@
+<div class="bg-white py-2 px-1">
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let partner of partners; let i = index">
+      <ng-template carouselSlide class="h-[100px]">
+        <div class="w-full lg:h-[100px] h-[130px] border-x-[0.5px] border-[#BFBBBB]">
+          <a
+            [href]="partner.link"
+            target="_blank"
+            [cTooltip]="partner.content"
+            placement="auto"
+            triggers="hover focus"
+            [attr.data-index]="i"
+            class="px-6 h-full cursor-pointer flex items-center justify-center"
+          >
+            <img [src]="partner.image" height="100" alt="Partner Logo" />
+          </a>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>

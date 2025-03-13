@@ -1,0 +1,13 @@
+<div
+  class="w-full h-full flex flex-col justify-center rounded-r-2xl rounded-br-2xl drop-shadow-xl"
+>
+  <div *ngFor="let reason of reasons" class="my-5 lg:pr-20" key="{index}">
+    <div class="flex items-center gap-1">
+      <img src="icons/check_circle.svg" alt="" />
+      <p class="text-2xl font-bold lato text-[#13C5DD]">{{ reason.title }}</p>
+    </div>
+    <p class="lato font-normal text-xl text-[#6E7191] mt-2">
+      {{ reason.content }}
+    </p>
+  </div>
+</div>
