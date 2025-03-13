@@ -15,13 +15,12 @@ export class PartnerComponent {
   @Input() partners: PartnersProps[] = Partners;
   @Input() customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     autoplay: true,
     navSpeed: 700,
-    navText: ['', ''],
     responsive: {
       0: {
         items: 1,

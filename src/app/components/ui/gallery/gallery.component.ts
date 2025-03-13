@@ -28,7 +28,6 @@ export class GalleryComponent {
     dots: false,
     autoplay: true,
     navSpeed: 700,
-    navText: ['', ''],
     responsive: {
       0: {
         items: 1,
