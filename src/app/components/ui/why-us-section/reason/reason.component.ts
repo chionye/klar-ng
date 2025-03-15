@@ -1,5 +1,5 @@
-import { NgFor, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
 import { ServicesProps } from '../../../../interface/types';
 import { Reasons } from '../../../../content';
 

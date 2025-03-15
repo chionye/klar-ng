@@ -1,5 +1,5 @@
 import { NgFor, NgOptimizedImage, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ServicesProps } from '../../../../interface/types';
 import { Services } from '../../../../content';
 

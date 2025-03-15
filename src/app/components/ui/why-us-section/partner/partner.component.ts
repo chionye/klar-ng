@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { PartnersProps } from '../../../../interface/types';
 import { Partners } from '../../../../content';
 import { NgFor } from '@angular/common';

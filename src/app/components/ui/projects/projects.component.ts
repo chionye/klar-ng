@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { TitleComponent } from '../../elements/title/title.component';
 import { Sliders } from '../../../content';
 import { ProjectsProps } from '../../../interface/types';

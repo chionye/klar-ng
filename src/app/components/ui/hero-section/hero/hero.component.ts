@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ButtonComponent } from '../../../elements/button/button.component';
 import { Contacts } from '../../../../enum/contacts';
 import { CardsComponent } from '../cards/cards.component';

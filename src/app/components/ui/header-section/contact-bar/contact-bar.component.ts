@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ContactProp } from '../../../../interface/types';
 import { Contact } from '../../../../content';
 import { NgClass, NgFor, NgOptimizedImage } from '@angular/common';

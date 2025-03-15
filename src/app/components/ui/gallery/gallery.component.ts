@@ -1,5 +1,5 @@
-import { NgFor, NgOptimizedImage, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { NgFor, NgStyle } from '@angular/common';
+import { Component } from '@angular/core';
 import { GalleryImages } from '../../../content';
 import {
   CarouselModule,

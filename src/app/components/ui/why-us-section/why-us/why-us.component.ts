@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { TitleComponent } from '../../../elements/title/title.component';
 import { ButtonComponent } from '../../../elements/button/button.component';
 import { Contacts } from '../../../../enum/contacts';

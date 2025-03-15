@@ -1,5 +1,5 @@
 import { NgOptimizedImage, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { FooterTagLine, NeedHelpText } from '../../../../content';
 import { Contacts } from '../../../../enum/contacts';
 import { FooterNavComponent } from '../footer-nav/footer-nav.component';

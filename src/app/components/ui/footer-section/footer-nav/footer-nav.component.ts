@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { FooterNav, NavItems } from '../../../../content';
+import { Component } from '@angular/core';
+import { FooterNav } from '../../../../content';
 import { NavProp } from '../../../../interface/types';
 import { NgClass, NgFor } from '@angular/common';
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CardProps } from '../../../../interface/types';
 import { Cards } from '../../../../content';
 import { NgClass, NgFor } from '@angular/common';
