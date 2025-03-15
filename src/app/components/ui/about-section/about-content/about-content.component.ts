@@ -9,5 +9,5 @@ import { NgFor } from '@angular/common';
   styleUrl: './about-content.component.css',
 })
 export class AboutContentComponent {
-  @Input() text: string[] = About;
+  text: string[] = About;
 }

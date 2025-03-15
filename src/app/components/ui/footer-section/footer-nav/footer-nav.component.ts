@@ -10,7 +10,7 @@ import { NgClass, NgFor } from '@angular/common';
   styleUrl: './footer-nav.component.css',
 })
 export class FooterNavComponent {
-  @Input() navs: NavProp[] = FooterNav;
+  navs: NavProp[] = FooterNav;
   scrollToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
     if (section) {

@@ -10,5 +10,5 @@ import { CardsComponent } from '../cards/cards.component';
   styleUrl: './hero.component.css',
 })
 export class HeroComponent {
-  @Input() email: string = Contacts.email;
+  email: string = Contacts.email;
 }

@@ -16,11 +16,11 @@ import {
   styleUrl: './projects.component.css',
 })
 export class ProjectsComponent {
-  @Input() sliders: ProjectsProps[] = Sliders;
-  @Input() activeSlides?: SlidesOutputData;
-  @Input() slidesStore?: any[];
-  @Input() showMore: boolean = false;
-  @Input() customOptions: OwlOptions = {
+  sliders: ProjectsProps[] = Sliders;
+  activeSlides?: SlidesOutputData;
+  slidesStore?: any[];
+  showMore: boolean = false;
+  customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,

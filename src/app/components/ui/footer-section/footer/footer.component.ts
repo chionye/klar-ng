@@ -11,9 +11,9 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  @Input() footerTagLine: string = FooterTagLine;
-  @Input() needHelpText: string = NeedHelpText;
-  @Input() phone: string = Contacts.phone;
-  @Input() address: string = Contacts.address;
-  @Input() year: number = new Date().getFullYear();
+  footerTagLine: string = FooterTagLine;
+  needHelpText: string = NeedHelpText;
+  phone: string = Contacts.phone;
+  address: string = Contacts.address;
+  year: number = new Date().getFullYear();
 }

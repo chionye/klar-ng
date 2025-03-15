@@ -10,5 +10,5 @@ import { Reasons } from '../../../../content';
   styleUrl: './reason.component.css',
 })
 export class ReasonComponent {
-  @Input() reasons: ServicesProps[] = Reasons;
+  reasons: ServicesProps[] = Reasons;
 }

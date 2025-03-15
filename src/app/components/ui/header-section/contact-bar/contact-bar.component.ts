@@ -43,5 +43,5 @@ import {
   ],
 })
 export class ContactBarComponent {
-  @Input() contacts: ContactProp[] = Contact;
+  contacts: ContactProp[] = Contact;
 }

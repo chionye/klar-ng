@@ -19,5 +19,5 @@ import { PartnerComponent } from '../partner/partner.component';
   styleUrl: './why-us.component.css',
 })
 export class WhyUsComponent {
-  @Input() email: string = Contacts.email;
+  email: string = Contacts.email;
 }

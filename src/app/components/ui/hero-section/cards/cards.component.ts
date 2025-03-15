@@ -10,5 +10,5 @@ import { NgClass, NgFor } from '@angular/common';
   styleUrl: './cards.component.css',
 })
 export class CardsComponent {
-  @Input() cards: CardProps[] = Cards;
+  cards: CardProps[] = Cards;
 }

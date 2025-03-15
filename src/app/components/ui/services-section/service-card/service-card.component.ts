@@ -10,5 +10,5 @@ import { Services } from '../../../../content';
   styleUrl: './service-card.component.css',
 })
 export class ServiceCardComponent {
-  @Input() services: ServicesProps[] = Services;
+  services: ServicesProps[] = Services;
 }

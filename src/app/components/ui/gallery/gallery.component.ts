@@ -14,12 +14,12 @@ import {
   styleUrl: './gallery.component.css',
 })
 export class GalleryComponent {
-  @Input() activeIndex: number = 0;
-  @Input() images = GalleryImages;
-  @Input() activeSlides?: SlidesOutputData;
-  @Input() slidesStore?: any[];
-  @Input() showMore: boolean = false;
-  @Input() customOptions: OwlOptions = {
+  activeIndex: number = 0;
+  images = GalleryImages;
+  activeSlides?: SlidesOutputData;
+  slidesStore?: any[];
+  showMore: boolean = false;
+  customOptions: OwlOptions = {
     loop: true,
     center: true,
     mouseDrag: true,

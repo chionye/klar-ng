@@ -12,8 +12,8 @@ import { TooltipModule } from '@coreui/angular';
   styleUrl: './partner.component.css',
 })
 export class PartnerComponent {
-  @Input() partners: PartnersProps[] = Partners;
-  @Input() customOptions: OwlOptions = {
+  partners: PartnersProps[] = Partners;
+  customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
